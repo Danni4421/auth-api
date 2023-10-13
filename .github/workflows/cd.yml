@@ -1,14 +1,14 @@
 name: Continuous Deployment
-
-on:
+ 
+on: 
   push:
     branches:
       - master
-
+ 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+ 
     steps:
     - name: SSH and deploy app
       uses: appleboy/ssh-action@master
