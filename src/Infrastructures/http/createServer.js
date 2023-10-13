@@ -21,11 +21,11 @@ const createServer = async (container) => {
     },
   ]);
 
-  await server.route({
+  server.route({
     method: 'GET',
     path: '/',
     handler: () => ({
-      value: 'Hello world!',
+      value: 'Hallo dunia!',
     }),
   });
 
